@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "basics-databinding": {
+    "basics-assignment-2-start": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/basics-databinding",
+            "outputPath": "dist/basics-assignment-2-start",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "basics-databinding:build:production"
+              "buildTarget": "basics-assignment-2-start:build:production"
             },
             "development": {
-              "buildTarget": "basics-databinding:build:development"
+              "buildTarget": "basics-assignment-2-start:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "basics-databinding:build"
+            "buildTarget": "basics-assignment-2-start:build"
           }
         },
         "test": {
@@ -104,6 +104,6 @@
     }
   },
   "cli": {
-    "analytics": "72b719e6-0d85-4b66-9e42-b9ea4e5d1b7d"
+    "analytics": "37e2ba10-e660-404e-83a9-d91eb049bff9"
   }
 }
