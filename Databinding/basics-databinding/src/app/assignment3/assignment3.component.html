@@ -1,0 +1,7 @@
+<button (click)="toggleParagraph()">Display Details</button>
+<p *ngIf="!displayParagraph">Secret password == 'Tuna'</p>
+<!-- <p *ngFor="let logItem of logItems" [ngStyle]="{backgroundColor: (logItem >= 5)? 'blue' : 'transparent'}"
+    [ngClass]="{'background': (logItem>=5)}">{{logItem}}</p> -->
+
+    <p *ngFor="let date of dates; let index = index" [ngStyle]="{backgroundColor: (index >= 5)? 'blue' : 'transparent'}"
+        [ngClass]="{'background': (index>=5)}">{{date}}</p>
