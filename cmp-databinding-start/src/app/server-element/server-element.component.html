@@ -3,6 +3,7 @@
     <div class="panel-body">
         <p>
             <strong *ngIf="element.type === 'server'" style="color: red">{{ element.content }}</strong>
+            <ng-content></ng-content>
             <em *ngIf="element.content === 'blueprint'">{{ element.content }}</em>
         </p>
     </div>
