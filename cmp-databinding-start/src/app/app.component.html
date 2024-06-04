@@ -6,7 +6,7 @@
       <button class="btn btn-primary" (click)="onChangeFirst()">Change first Element</button>
       <button class="btn btn-danger" (click)="onDestroy()">On destroy called</button>
       <app-server-element [srvElement]="serverElement" [name]="serverElement.name">
-        <p>
+        <p #pargraphContent>
           <strong *ngIf="serverElement.type === 'server'" style="color: red">{{ serverElement.content }}</strong>
           <ng-content></ng-content>
           <em *ngIf="serverElement.content === 'blueprint'">{{ serverElement.content }}</em>

@@ -1,5 +1,4 @@
-import { getLocaleFirstDayOfWeek } from '@angular/common';
-import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, ElementRef, Input, OnChanges, OnInit, SimpleChanges, ViewChild, ViewEncapsulation } from '@angular/core';
+import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, ContentChild, DoCheck, ElementRef, Input, OnChanges, OnInit, SimpleChanges, ViewChild, ViewEncapsulation } from '@angular/core';
 
 
 
@@ -24,6 +23,7 @@ export class ServerElementComponent implements OnInit, OnChanges, DoCheck, After
   @Input() name: string;
 
   @ViewChild('heading') header: ElementRef;
+  @ContentChild('paragraphContent') paragraph: ElementRef;
 
 
 
@@ -50,6 +50,7 @@ export class ServerElementComponent implements OnInit, OnChanges, DoCheck, After
 
   ngAfterContentInit() {
     console.log("Ng after content init called");
+    // console.log("ParagrapH called", this.paragraph.nativeElement.textContent);    CHECK ON THIS LATER
   }
 
   ngAfterContentChecked() {
