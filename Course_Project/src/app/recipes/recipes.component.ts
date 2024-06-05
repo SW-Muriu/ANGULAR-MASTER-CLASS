@@ -9,6 +9,7 @@ import { Recipe } from './recipes.module';
 export class RecipesComponent {
 
  
+  selectedRecipe$: Recipe;
 
 
   constructor() { }
