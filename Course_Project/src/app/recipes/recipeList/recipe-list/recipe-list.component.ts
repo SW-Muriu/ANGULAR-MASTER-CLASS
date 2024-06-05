@@ -8,8 +8,8 @@ import { Recipe } from '../../recipes.module';
 })
 export class RecipeListComponent {
   recipes: Recipe[] = [
-    new Recipe("A test Title", "A recipe Descroption", 'https://wallpaperaccess.com/full/3691432.jpg'),
-    new Recipe("A test Title", "A recipe Descroption", 'https://wallpaperaccess.com/full/3691432.jpg')
+    new Recipe("A test Title", "A recipe Description", 'https://wallpaperaccess.com/full/3691432.jpg'),
+    new Recipe("A test Title", "A recipe Description", 'https://wallpaperaccess.com/full/3691432.jpg')
 
   ];
   constructor(){}
