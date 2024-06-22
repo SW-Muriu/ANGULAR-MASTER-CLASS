@@ -12,6 +12,10 @@ export class UnlessDirective {
     }
   }
 
+  /******************
+   * The template reference marks the what and the vcRef marks the where.
+   * Using self-built structural directive
+   */
   constructor(private templateRef: TemplateRef<any>, private vcRef: ViewContainerRef) { }
 
 }
