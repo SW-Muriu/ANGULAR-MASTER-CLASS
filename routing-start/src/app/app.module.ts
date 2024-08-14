@@ -15,9 +15,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes =[
 
-  { path: "users", component: UserComponent } ,
+  { path: "users", component: UserComponent },
+  { path: "users/:id/:name", component: UserComponent },
   { path: "servers", component: ServersComponent },
-  { path: "users", component: HomeComponent  } 
+  { path: "users", component: HomeComponent }, 
+  { path: "servers/:id/edit", component: EditServerComponent }, 
   
 ]
 
@@ -40,4 +42,5 @@ const appRoutes: Routes =[
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
 

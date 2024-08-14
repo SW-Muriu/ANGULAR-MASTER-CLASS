@@ -15,11 +15,14 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  onLoadServers(): void{
+  onLoadServers(id: number): void{
 
     //Using absolute paths. Check relative paths in the servers component
     const route = '/servers';
-    this.router.navigate([route]);
+    this.router.navigate([route, id, 'edit'], {
+      queryParams: { allowEdit: '1' },
+      fragment: 'loading'
+    });
   }
 
 }
